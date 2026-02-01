@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: #aaddff; 
-    font-family: 'Merriweather', serif; /* Updated Font */
+    font-family: 'Libre Baskerville', serif;
     margin: 0;
     min-height: 100vh;
 }
@@ -20,16 +20,21 @@ body {
     position: relative;
     z-index: 10;
     padding: 60px 20px;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.8; 
     font-size: 1.2rem;
 }
 
+.story-container {
+    max-width: 500px;
+    margin: 0 auto; /* Centers the narrow window inside the wide one */
+}
+
 /* Typography Overrides */
 h1 {
-    color: #ff55cc; 
+    color: #FE709F; 
     margin-bottom: 30px;
     font-weight: 900; 
     font-size: 2.5rem; 
@@ -45,7 +50,23 @@ h2 {
 /* Navigation & Button Styles */
 .nav-container {
     margin-bottom: 60px;
-    text-align: center; /* Moves top buttons to the right */
+    text-align: right; 
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-left: 30px; /* Spacing between links */
+    border-bottom: 2px solid transparent; /* Invisible underline */
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+    border-bottom: 2px solid white; /* Underline appears on hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .button-grid {
@@ -73,7 +94,7 @@ h2 {
 
 .disclaimer {
     font-size: 0.9rem; /* <--- Updated size */
-    color: #ff55cc;
+    color: #FE709F;
     opacity: 0.8;
     margin-top: 80px;
     border-top: 1px solid #333;

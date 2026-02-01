@@ -12,7 +12,7 @@ const universeHeight = window.innerHeight + (maxScroll * PARALLAX_SPEED);
 universeEl.style.height = `${universeHeight}px`;
 
 function createStars() {
-    const starCount = 800; 
+    const starCount = 2400; // Tripled from 800
 
     for (let i = 0; i < starCount; i++) {
         const star = document.createElement("div");
