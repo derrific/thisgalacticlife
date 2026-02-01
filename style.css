@@ -1,10 +1,108 @@
 body {
-    background-color: #0d0d0d;
-    color: white;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: black;
+    color: #aaddff; 
+    font-family: 'Merriweather', serif; /* Updated Font */
     margin: 0;
+    min-height: 100vh;
+}
+
+#universe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    will-change: transform;
+}
+
+#transmission {
+    position: relative;
+    z-index: 10;
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8; 
+    font-size: 1.2rem;
+}
+
+/* Typography Overrides */
+h1 {
+    color: #ff55cc; 
+    margin-bottom: 30px;
+    font-weight: 900; 
+    font-size: 2.5rem; 
+}
+
+h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.8rem; 
+}
+
+/* Navigation & Button Styles */
+.nav-container {
+    margin-bottom: 60px;
+    text-align: center; /* Moves top buttons to the right */
+}
+
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.btn {
+    /* ... keep other properties ... */
+    display: inline-block;
+    border: 1px solid #aaddff;
+    color: #aaddff;
+    padding: 12px 25px; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem; /* <--- Updated size */
+}
+
+.disclaimer {
+    font-size: 0.9rem; /* <--- Updated size */
+    color: #ff55cc;
+    opacity: 0.8;
+    margin-top: 80px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+/* Dynamic Hover Effect */
+.btn:hover {
+    background-color: #aaddff;
+    color: black;
+    box-shadow: 0 0 15px #aaddff;
+    border-color: #aaddff;
+    transform: scale(1.05);
+}
+
+/* Specific styling for the top nav */
+.nav-btn {
+    border-color: white;
+    color: white;
+}
+.nav-btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px white;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 2px white;
 }
